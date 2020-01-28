@@ -1,0 +1,16 @@
+P + A => Q
+I ^ K => P
+O => !P
+K + L => O
+D + E + M => N
+L ^ K => M
+I | C => J + !K
+G + A => I
+F => !H
+E => F + (G | H)
+D => E ^ C
+B => !C
+A => B
+
+=AD
+?ABCDEFGHIJKLMNOPQ
