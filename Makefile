@@ -8,7 +8,7 @@ OBJPATH = obj/
 
 OBJ = $(addprefix $(OBJPATH),$(SRCS:.cpp=.o))
 
-DEP = $(addprefix $(OBJPATH),$(SRCS:.hpp=.d))
+DEP = $(addprefix $(HEAD),$(SRCS:.hpp=.d))
 
 HEAD = -I head/
 
