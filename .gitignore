@@ -1,0 +1,6 @@
+.vscode
+a.out*
+obj/*.o
+obj
+*SYM
+.gdb_history
