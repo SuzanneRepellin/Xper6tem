@@ -6,7 +6,7 @@
 /*   By: srepelli <srepelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 17:50:48 by srepelli          #+#    #+#             */
-/*   Updated: 2020/01/28 14:23:31 by srepelli         ###   ########.fr       */
+/*   Updated: 2020/01/28 16:29:54 by srepelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ namespace xper6tem
         private:
         vector<char>    get_between_par(vector<char> rule);
         bool            everything_is_between_par(vector<char> rule);
-        t_node          *parenthesis_manager(vector<char> rule, t_node* parent, t_node *new_node);
+        t_node          *parenthesis_manager(vector<char> rule, t_node* parent);
         vector<char>    get_sign_out_of_par_left(vector<char> rule, char data);
         vector<char>    get_sign_out_of_par_right(vector<char> rule, char data);
         t_node          *fill_tree_branch(vector<char> rule, t_node* parent);

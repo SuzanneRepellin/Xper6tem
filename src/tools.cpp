@@ -2,16 +2,6 @@
 
 using namespace std;
 
-void    print_bin_tree(t_node* tree)
-{
-    t_node* base = tree;
-    while (tree != NULL)
-    {
-        cout << tree->data << endl;
-        tree = tree->left;
-    }
-}
-
 string  strtrim(string str)
 {
     string ret;
@@ -88,7 +78,6 @@ int     countchar(const string s, char c)
 
 bool    find_elem_in_tree(t_node *tree, char elem)
 {
-   t_node  *start = tree;
    bool ret = false;
    if (tree && tree->type != Entity)
    {

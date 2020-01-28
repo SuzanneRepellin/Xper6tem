@@ -6,7 +6,7 @@
 /*   By: srepelli <srepelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 17:13:05 by srepelli          #+#    #+#             */
-/*   Updated: 2020/01/28 14:17:30 by srepelli         ###   ########.fr       */
+/*   Updated: 2020/01/28 16:28:54 by srepelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,9 +131,6 @@ namespace xper6tem
 
     status ExpertEngine::tree_browse(t_node *tree)
     {
-        status left;
-        status right;
-
         if (tree->stat != Unsure && tree->confirmed)
             return tree->stat;
         else if (tree->type == Equivalence)

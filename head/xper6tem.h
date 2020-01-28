@@ -6,7 +6,7 @@
 /*   By: srepelli <srepelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 17:50:56 by srepelli          #+#    #+#             */
-/*   Updated: 2020/01/03 16:44:56 by srepelli         ###   ########.fr       */
+/*   Updated: 2020/01/28 16:28:09 by srepelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ class  t_node
 size_t                      charpos(std::vector<char> vec, char c);
 size_t                      charpos_nopar(std::vector<char> vec, char c);
 std::string                 strtrim(std::string str);
-void                        print_bin_tree(t_node* tree);
 std::vector<std::string>    split(const std::string &s, char delim);
 bool                        find_elem_in_tree(t_node *tree, char elem);
 int                         countchar(const std::string s, char c);

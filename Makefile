@@ -12,7 +12,7 @@ DEP = $(addprefix $(OBJPATH),$(SRCS:.hpp=.d))
 
 HEAD = -I head/
 
-FLAGS = -std=c++11 -g
+FLAGS = -std=c++11 -Wall -Wextra -Werror
 
 all: $(NAME)
 

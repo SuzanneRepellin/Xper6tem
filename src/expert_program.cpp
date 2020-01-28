@@ -6,7 +6,7 @@
 /*   By: srepelli <srepelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 17:50:48 by srepelli          #+#    #+#             */
-/*   Updated: 2020/01/28 14:26:06 by srepelli         ###   ########.fr       */
+/*   Updated: 2020/01/28 16:29:45 by srepelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,7 +179,7 @@ namespace xper6tem
         return false;
     }
 
-    t_node* ExpertProgram::parenthesis_manager(vector<char> rule, t_node *parent, t_node *new_node)
+    t_node* ExpertProgram::parenthesis_manager(vector<char> rule, t_node *parent)
     {
         vector<char> between_par = get_between_par(rule);
         return fill_tree_branch(between_par, parent);
@@ -279,7 +279,7 @@ namespace xper6tem
         else if (charpos_nopar(rule, '!') != size)
             data = '!';
         else if (find(rule.begin(), rule.end(), '(') != rule.end())
-            return parenthesis_manager(rule, parent, new_node);
+            return parenthesis_manager(rule, parent);
         else
             return NULL;
         new_node->type = Operator;
